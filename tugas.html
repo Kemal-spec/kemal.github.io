@@ -1,0 +1,62 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<img src="pet.jpg" width=100%>
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openHewan('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openHewan('Anjing')">Anjing</button>
+ <button class="w3-bar-item w3-button" onclick="openHewan('Kucing')">Kucing</button>
+ <button class="w3-bar-item w3-button" onclick="openHewan('Kelinci')">Kelinci</button>
+ <button class="w3-bar-item w3-button" onclick="openHewan('Burung')">Burung</button>
+ <button class="w3-bar-item w3-button" onclick="openHewan('Profile')">Profile</button>
+</div>
+<div id="Home" class="w3-container hewan w3-orange w3-animate-left">
+ <center>
+ <h2>Welcome</h2>
+ <p>
+ <img src="bghome.jpg">
+</div>
+<center>
+<div id="Anjing" class="w3-container hewan w3-animate-left w3-orange" style="display:none">
+ <h2>Anjing</h2>
+ <p>Anjing adalah hewan pemangsa dan hewan pemakan bangkai, memiliki gigi tajam dan rahang yang kuat untuk menyerang, menggigit, dan mencabik-cabik makanan. Ciri-ciri khas dari moyang serigala masih bertahan pada anjing, walaupun penangkaran secara selektif telah berhasil mengubah bentuk fisik berbagai jenis anjing ras.</p>
+ <img src="anjing.jpg">
+</div>
+<div id="Kucing" class="w3-container hewan w3-animate-right w3-orange" style="display:none">
+ <h2>Kucing</h2>
+ <p>Kucing disebut juga kucing domestik atau kucing rumah (nama ilmiah: Felis silvestris catus atau Felis catus) adalah sejenis mamalia karnivora dari keluarga Felidae. Kata "kucing" biasanya merujuk kepada "kucing" yang telah dijinakkan, tetapi bisa juga merujuk kepada "kucing besar" seperti singa dan harimau.</p>
+<img src="kucing.jpg">
+</div>
+<div id="Kelinci" class="w3-container hewan w3-animate-left w3-orange" style="display:none">
+ <h2>Kelinci</h2>
+ <p>Kelinci adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi. Kelinci berkembang biak dengan cara beranak yang disebut vivipar. Dulunya, hewan ini adalah hewan liar yang hidup di Afrika hingga ke daratan Eropa. Pada perkembangannya, tahun 1912, kelinci diklasifikasikan dalam ordo Lagomorpha. Ordo ini dibedakan menjadi dua famili, yakni Ochtonidae (jenis pika yang pandai bersiul) dan Leporidae (termasuk di dalamnya jenis kelinci dan terwelu). Asal kata kelinci berasal dari bahasa Belanda, yaitu konijntje yang berarti "anak kelinci". Hal ini menunjukkan bahwa masyarakat Nusantara mulai mengenali kelinci saat masa kolonial, padahal di Pulau Sumatra ada satu spesies asli kelinci sumatera (Nesolagus netscheri) yang baru ditemukan pada tahun 1972.</p>
+ <img src="kelinci.jpg">
+</div>
+<div id="Burung" class="w3-container hewan w3-animate-right w3-orange" style="display:none">
+ <h2>Burung</h2>
+ <p>Burung adalah anggota kelompok hewan bertulang belakang (vertebrata) yang memiliki bulu dan sayap.
+
+Jenis-jenis burung begitu bervariasi, mulai dari burung kolibri yang kecil dan dapat mengepakkan sayap dengan sangat cepat, penguin yang menyelam dengan sayapnya, hingga burung unta, yang lebih tinggi dari manusia. Sebagian besar spesies burung di dunia mampu terbang menggunakan sayapnya (mis. bebek, angsa, burung gereja, pelikan, burung hantu, elang, cenderawasih, dan masih banyak lagi), kecuali beberapa jenis burung yang biasanya endemik di tempat tertentu, seperti burung unta, moa, kasuari, kiwi, penguin, dan sebagainya. Diperkirakan terdapat sekitar 8.800 – 10.200 spesies burung di seluruh dunia; sekitar 1.500 jenis di antaranya ditemukan di Indonesia. Berbagai jenis burung ini secara ilmiah digolongkan ke dalam kelas Aves.</p>
+ <img src="burung.jpg">
+</div>
+<div id="Profile" class="w3-container hewan w3-animate-left w3-orange" style="display:none">
+ <h2>Profile</h2>
+ <p>NIM : 10121117<br>
+    Nama: Kemal Abdul Aziz<br>
+    Kelas: IF 3</p>
+ <img src="kemal2.png">
+</div>
+<script>
+function openHewan(namaHewan) {
+ var i;
+ var x = document.getElementsByClassName("hewan");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaHewan).style.display = "block";
+}
+</script>
+</body>
+</html>
